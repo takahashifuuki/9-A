@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-A課題 - リンク先</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            display: flex;
+        }
+
+        .nav-item {
+            border: 1px solid white;
+            padding: 5px 15px;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            width: 50%; 
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            flex: 1; 
+            min-height: 200px;
+        }
+
+        .title, .content {
+            border-bottom: 2px solid black;
+            padding: 10px;
+            font-size: 1.2rem;
+        } 
+
+        footer {
+            padding: 10px;
+            font-size: 1.2rem;
+            margin-top: auto; 
+        }
+    </style>
 </head>
 <body>
-    <h1>9-A課題</h1>
+
+    <header>
+        <div class="nav-item">logo</div>
+        <div class="nav-item">menu1</div>
+        <div class="nav-item">menu2</div>
+    </header>
+
+    <div class="container">
+        <div class="title">title</div>
+        <div class="content">content</div>
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
 </body>
 </html>
